@@ -1,0 +1,18 @@
+
+-> We can actually do the server site rendering if we folloe the instruction with the gatsby ssr API doc .
+-> gatsby Nodes we are gonna use inorder to build out some of more server required things 
+-> The gatsby-Config is gonna be the main file we are gonna make focus on  
+
+    -> The gatsby-config files holds a lot of configuration options we need inorder gatsby to know ehat to do 
+
+    -> The "siteMetadata" is the data that we can pull into our component using GraphQl inside our gatsby project.
+        So if we wanna access a title ,description or the author in any way we are able to leverage graphQl and pull this 'siteMetadata' right out of this gatsby-config Object 
+    -> The "Plugins" are additional little libraries that allows you to do different things with different files 
+
+-> Conceptually we just have to keep this things in mind that if we want to make new pages we add them into the page folder and the page Route will be named to whatever name we have given to our files 
+
+-> One more big caviats about gatsby is because gatsby buuilds all of our static pages ahead of time we do not dynamically compose them. which means that the way that wwe used to structure our react code is going to be little different  
+
+-> one thing you might have noticed that every component is wraped up with our <layOut> compoent, The reason for this is because we need to actually render the header, and the footer and the any consistent styling between the pages every single time . So why is it this way ? -> Gatsby is a static site generator , meaning that gatsby actually nedds to build that pages on the build step , meaning that it builds every single page's complete html that the user needs on that browser inorder to view the page  
+
+-> If we want to keep something on our website that we needed to use consistently in all of our pages we can easily just just change it inside the siteMetaData

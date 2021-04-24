@@ -12,3 +12,5 @@ const NotFoundPage = () => (
 )
 
 export default NotFoundPage
+
+// Note: this 404 page Gatsby will automatically know to use in the love production if the user navigates to some page that does not exist.
